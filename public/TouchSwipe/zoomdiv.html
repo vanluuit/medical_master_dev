@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+		<title>Title Page</title>
+
+		<!-- Bootstrap CSS -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+
+		<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+		<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+		<!--[if lt IE 9]>
+			<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.2/html5shiv.min.js"></script>
+			<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+		<![endif]-->
+		<style type="text/css">
+			#test {
+				overflow: scroll;
+			}
+			#test1 {
+				height: 150px;
+			}
+			img {
+				/*max-width: 100%;*/
+			}
+		</style>
+	</head>
+	<body>
+		<div class="container">
+			<div class="row">
+				<div class="col-xs-12">
+					<img src="./images.jpg">
+					<div id="test1"></div>
+					<div id="test" class="box">
+						<img src="./images.jpg">
+					</div>
+					<img src="./images.jpg">
+				</div>
+			</div>
+		</div>
+		<!-- jQuery -->
+		<script src="//code.jquery.com/jquery.js"></script>
+		<!-- Bootstrap JavaScript -->
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+		<!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+ 		<script type="text/javascript" src="https://google-code-prettify.googlecode.com/svn/loader/run_prettify.js"></script>
+        <script type="text/javascript" src="./jquery.touchSwipe.js"></script>
+        <script type="text/javascript" src="./js/main.js"></script>
+        <script type="text/javascript">
+        	$(document).ready(function(){
+        		$("#test").find('img').css('width', '100%');
+        		var height = $("#test").find('img').height();
+        		$("#test").css('height', height);
+        	});
+        	$(function() {
+
+					$("#test").swipe( {
+						pinchStatus:function(event, phase, direction, distance , duration , fingerCount, pinchZoom, fingerData) {
+							$('#test1').html("Pinch zoom " + pinchZoom + "  <br/>Distance pinched " + distance +" <br/>Direction " + direction);
+							$(this).find('img').css('max-width', 'inherit');
+							if(pinchZoom >= 1) {
+								$(this).find('img').css('width', pinchZoom);
+							}
+							
+						},
+						fingers:2,
+						threshold:0	,
+						preventDefaultEvents:false
+					});
+				});
+        </script>
+	</body>
+</html>

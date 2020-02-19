@@ -1,0 +1,47 @@
+<IfModule mod_rewrite.c>
+    Redirect /.env /
+    Redirect /.env.example /
+    Redirect /.gitattributes /
+    Redirect /.gitignore /
+    Redirect /appendonly.aof /
+    Redirect /artisan /
+    Redirect /composer.json /
+    Redirect /composer.lock /
+    Redirect /dump.rdb /
+    Redirect /favicon.ico /
+    Redirect /laravel-echo-server.json /
+    Redirect /package-lock.json /
+    Redirect /package.json /
+    Redirect /phpunit.xml /
+    Redirect /readme.md /
+    Redirect /robots.txt /
+    Redirect /server.js /
+    Redirect /server.php /
+    Redirect /web.config /
+    Redirect /webpack.mix.js /
+
+    <IfModule mod_negotiation.c>
+        Options -MultiViews -Indexes
+    </IfModule>
+    
+    RewriteEngine On
+    
+
+    # Handle Authorization Header
+    RewriteCond %{HTTP:Authorization} .
+    RewriteRule .* - [E=HTTP_AUTHORIZATION:%{HTTP:Authorization}]
+
+    # Redirect Trailing Slashes If Not A Folder...
+    RewriteCond %{REQUEST_FILENAME} !-d
+    RewriteCond %{REQUEST_URI} (.+)/$
+    RewriteRule ^ %1 [L,R=301]
+
+    # Handle Front Controller...
+    RewriteCond %{REQUEST_FILENAME} !-d
+    RewriteCond %{REQUEST_FILENAME} !-f
+    RewriteRule ^ index.php [L]
+</IfModule>
+
+
+
+

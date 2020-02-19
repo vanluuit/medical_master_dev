@@ -1,0 +1,238 @@
+body {
+    font-style: 16px;
+}
+a.action_but {
+    width: 27px;
+    height: 27px;
+    display: inline-block;
+    text-align: center;
+    background: #e2e2e2;
+    font-size: 17px;
+    border: 1px solid #c1c1c1;
+    border-radius: 3px;
+    line-height: 25px;
+}
+.error {
+    color: #cd3e3e;
+}
+/*table.show-tb tr th, table.show-tb tr td {
+    padding: 8px;
+}*/
+img#avatar_show {
+    width: 80px;
+    height: 80px;
+    border: 1px solid #c1c1c1;
+    display: block;
+    border-radius: 50%;
+}
+.float-center{
+margin: 0 auto;
+}
+.mg-l15{
+    margin-left: 15px;
+}
+.mg-r15{
+    margin-right: 15px;
+}
+img.thumbnail {
+    width: 80px;
+    height: auto;
+}
+.form-control {
+    color: #000000!important;
+}
+hr {
+    margin: 0;
+}
+img {
+    max-width: 100%;
+}
+.sidebar-nav ul.first-level .sidebar-item {
+    background: #000000e0;
+}
+.bootstrap-datetimepicker-widget {
+    display: table;
+}
+.datepicker .datepicker-switch, .datepicker .next, .datepicker .prev, .datepicker tfoot tr th {
+    cursor: pointer;
+    font-size: 14px;
+}
+span.month, span.year {
+    font-size: 14px;
+}
+
+li.select2-selection__choice {
+    list-style: none;
+    max-width: 300px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+a#nofical span {
+    color: white;
+    font-size: 10px;
+    font-weight: bold;
+    background: red;
+    border-radius: 50%;
+    padding: 2px 3px;
+    margin-left: -8px;
+}
+.thumbnail {
+    line-height: 0;
+}
+.select2-selection {
+    text-overflow: ellipsis!important;
+    overflow: hidden!important;
+}
+.ui-state-default a, .ui-state-default a:link, .ui-state-default a:visited, a.ui-button, a:link.ui-button, a:visited.ui-button, .ui-button {
+     color: #fff; 
+}
+.cthl {
+    padding: 12px 12px 2px;
+    margin-bottom: 12px;
+    background: #f1f1f1;
+}
+
+
+table.table {
+    overflow-x: scroll;
+}
+table.table thead, table.table tbody {
+    display: table-header-group;
+    min-width: 100%;
+    clear: both;
+    overflow: scroll;
+}
+.card {
+    margin-bottom: 20px;
+    /* overflow-x: scroll; */
+}
+.scroll {
+    overflow-x: scroll;
+    width: 100%;
+}
+.tab-content {
+    border: 1px solid #e0e4e8;
+    border-top: unset;
+}
+.nav-tabs .nav-link {
+    border-color: #eeeeee;
+}
+.nav-tabs .nav-item:first-child .nav-link {
+    border-color: #fff #fff #eeeeee #fff;
+}
+ul.list_check {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    display: table;
+    width: 100%;
+}
+
+ul.list_check li {
+    float: left;
+    width: 50%;
+}
+ul.l_province li {
+    float: left;
+    width: 33%;
+}
+div#result_user {
+    max-height: 500px;
+    border: 1px solid #e0e4e8;
+    min-height: 500px;
+    overflow-y: scroll;
+    padding: 10px;
+}
+.swith {
+    display: none;
+}
+#checkbox_member {
+    max-height: 250px;
+    overflow-y: scroll;
+    border: 1px solid #e0e4e8;
+    padding: 10px;
+}
+#checkbox_member ul
+{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+#checkbox_member ul li {
+    float: left;
+    width: 33%;
+}
+#checkbox_member input[type="text"] {
+    margin-bottom: : 10px;
+}
+
+span#loading {
+    /*width: 20px;
+    height: 20px;*/
+    display: table;
+    float: right;
+    margin-left: 10px;
+}
+span#loading img{
+    width: 20px;
+    height: 20px;
+    display: block;
+    float: right;
+    margin-left: 10px;
+}
+table#list_user_filter {
+    width: 100%;
+}
+
+div#result_user img {
+    position: relative;
+    margin-top: 170px;
+    left : calc(50% - 64px);
+}
+
+.sidebar-nav ul .sidebar-item .sidebar-link-push {
+    color: #fff;
+    padding: 0.5rem 15px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    white-space: nowrap;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    line-height: 25px;
+    opacity: 0.6;
+}
+a.sidebar-link-push.active {
+    color: #fff!important;
+    opacity: 1!important;
+}
+.btn {
+    line-height: 1;
+    min-height: 41px;
+    margin: 2px;
+    /* display: flex; */
+    align-items: center;
+    text-align: center;
+    /* float: left; */
+    /* line-height: 32px; */
+}
+.border-top {
+    min-height: 62px;
+}
+a.btn{
+    line-height: 32px;
+}
+ul.suggets {
+    list-style: none;
+    padding: 0px 10px;
+    border: 1px solid #f1f1f1;
+    border-top: 0;
+    max-height: 200px;
+    overflow: auto;
+}
+tr.tr_error {
+    background: #f20000;
+    color: #fff;
+}

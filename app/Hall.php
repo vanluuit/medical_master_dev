@@ -1,0 +1,13 @@
+<?php
+
+namespace App;
+
+use Illuminate\Database\Eloquent\Model;
+
+class Hall extends Model
+{
+    protected $table = 'halls';
+    protected $fillable = [
+        'name', 'nabi', 'seminar_id'
+    ];
+}

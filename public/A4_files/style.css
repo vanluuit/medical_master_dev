@@ -1,0 +1,211 @@
+/* -----------------Variables-------------------- */
+.text-center {
+  text-align: center !important;
+}
+.text-right {
+  text-align: right !important;
+}
+.text-bold {
+  /* font-weight: 700 !important; */
+}
+.text-regular {
+  /*font-weight: 500 !important;*/
+}
+.ml-auto {
+  margin-left: auto !important;
+}
+.mr-auto {
+  margin-right: auto !important;
+}
+.ml15 {
+  margin-left: 15px !important;
+}
+.ml30 {
+  margin-left: 30px !important;
+}
+.mb10 {
+  margin-bottom: 10px !important;
+}
+.ml10 {
+  margin-left: 10px !important;
+}
+.ml5 {
+  margin-left: 5px !important;
+}
+.mt0 {
+  margin-top: 0 !important;
+}
+.mt10 {
+  margin-top: 10px !important;
+}
+.mt20 {
+  margin-top: 20px !important;
+}
+.letter-spacing {
+  letter-spacing: 4px;
+}
+.row {
+  display: flex;
+}
+.d-inline-block {
+  display: inline-block;
+}
+.col-auto {
+  flex: 1 1 auto;
+}
+.d-flex {
+  display: flex;
+}
+.d-block {
+  display: block;
+}
+.align-item-baseline {
+  align-items: baseline;
+}
+/* -----------------body-------------------- */
+body {
+  background: rgb(204,204,204);
+  font-size: 13px;
+  font-family : 'ãƒ’ãƒ©ã‚®ãƒŽè§’ã‚´ ProN' , 'Hiragino Kaku Gothic ProN' , 'æ¸¸ã‚´ã‚·ãƒƒã‚¯' , 'æ¸¸ã‚´ã‚·ãƒƒã‚¯ä½“' , YuGothic , 'Yu Gothic' , 'ãƒ¡ã‚¤ãƒªã‚ª' , Meiryo , 'ï¼­ï¼³ ã‚´ã‚·ãƒƒã‚¯' , 'MS Gothic' , HiraKakuProN-W3 , 'TakaoExã‚´ã‚·ãƒƒã‚¯' , TakaoExGothic , 'MotoyaLCedar' , 'Droid Sans Japanese' , sans-serif;
+}
+
+/* -----------text------------ */
+p, .text {
+  font-size: 14px;
+  line-height: 1.4;
+  /*font-weight: 600;*/
+}
+.store-information {
+  max-width: 450px;
+  margin-left: auto;
+}
+.store-information .item {
+  list-style: none;
+  list-style: none;
+  border-bottom: 1px solid black;
+  margin-bottom: 10px;
+}
+.text-nowwrap {
+  white-space: nowrap;
+}
+.text-vertical {
+  line-height: 40px;
+}
+/* -----------table------------ */
+.border-frame {
+  border: 2px solid black;
+  padding: 15px;
+}
+table {
+  width: 100%
+}
+.w10 {
+  width: 10px;
+}
+.w30 {
+  width: 30px;
+}
+.w39 {
+  width: 39px;
+}
+.w65 {
+  width: 65px;
+}
+.w140 {
+  width: 140px;
+}
+.w35 {
+  width: 35px;
+}
+.w200 {
+  width: 200px;
+}
+.w25 {
+  width: 25px;
+}
+.w22 {
+  width: 22px;
+}
+.w28 {
+  width: 28px;
+}
+.w279 {
+  width: 279px;
+}
+.w90 {
+  width: 90px;
+}
+.w100 {
+  width: 100px;
+}
+.h200 {
+  height: 200px;
+}
+.h150 {
+  height: 150px;
+}
+table , td, th {
+  border: 1px solid #595959;
+  border-collapse: collapse;
+  background-color: #fff;
+}
+td, th {
+  padding: 4px;
+}
+.even {
+  background: #fbf8f0;
+}
+.odd {
+  background: #fefcf9;
+}
+
+/* -----------list------------ */
+.list-info .item {
+  position: relative;
+  display: flex;
+}
+
+.item-float-lr {
+  display: flex;
+}
+.note-list {
+  list-style: none;
+}
+.note-list .text {
+  font-size: 12px;
+}
+
+.circle {
+  border: 1px solid black;
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  text-align: center;
+  line-height: 20px;
+  display: block;
+}
+
+.circle.font-11 {
+  font-size: 11px;
+}
+
+.note-container p {
+  font-size: 13px;
+}
+
+.note-container .item {
+  margin-bottom: 7px;
+}
+/* panel information */
+.panel-information {
+  border: 2px solid black;
+}
+.panel-information .heading-block > h3 {
+  padding: 10px;
+  text-align: center;
+  margin: 0;
+  border-bottom: 2px solid black;
+}
+.panel-information .content-info {
+  padding: 15px;
+}

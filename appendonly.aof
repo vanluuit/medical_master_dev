@@ -1,0 +1,34 @@
+*2
+$6
+SELECT
+$1
+0
+*4
+$5
+HMSET
+$7
+message
+$7
+message
+$7
+message
+*6
+$5
+HMSET
+$8
+hash key
+$10
+hashtest 1
+$10
+some value
+$10
+hashtest 2
+$16
+some other value
+*3
+$3
+SET
+$10
+string key
+$10
+string val
